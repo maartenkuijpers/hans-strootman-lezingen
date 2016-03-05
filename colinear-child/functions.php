@@ -21,4 +21,9 @@ function sa_sanitize_additional_chars ($filename) {
 return remove_accents( $filename );
 }
 
+add_action( 'after_setup_theme', 'my_child_theme_locale' );
+function my_child_theme_locale() {
+    load_child_theme_textdomain( 'colinear', get_stylesheet_directory() . '/languages' );
+}
+
 ?>

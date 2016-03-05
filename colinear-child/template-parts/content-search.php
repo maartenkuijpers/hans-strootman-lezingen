@@ -18,7 +18,7 @@
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
-        <a class="more-link" href="<?php esc_url( get_permalink() ) ?>"><?php__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'colinear' )?></a>
+        <a class="more-link" href="<?php esc_url( get_permalink() ) ?>">Lees verder...</a>
 	</div><!-- .entry-summary -->
         
 
