@@ -15,4 +15,10 @@ add_filter( 'the_content_more_link', 'modify_read_more_link' );
 function modify_read_more_link() {
 return ' <a class="more-link" href="' . get_permalink() . '">Lees verder...</a>';
 }
+
+add_filter('sanitize_file_name', 'sa_sanitize_additional_chars', 10);
+function sa_sanitize_additional_chars ($filename) {
+return remove_accents( $filename );
+}
+
 ?>
