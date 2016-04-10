@@ -23,7 +23,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<?php get_template_part( 'template-parts/content', 'category' ); ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
@@ -33,6 +33,7 @@ get_header(); ?>
 			?>
 
 		<?php endwhile; // End of the loop. ?>
+        <?php the_posts_navigation(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

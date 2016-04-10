@@ -5,6 +5,7 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package Colinear
+        <a class="more-link" href="<?php esc_url( get_permalink() ) ?>">Lees verder...</a>
  */
 
 ?>
@@ -18,7 +19,6 @@
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
-        <a class="more-link" href="<?php esc_url( get_permalink() ) ?>">Lees verder...</a>
 	</div><!-- .entry-summary -->
         
 
