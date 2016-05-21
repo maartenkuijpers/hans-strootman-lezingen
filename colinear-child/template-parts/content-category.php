@@ -9,7 +9,6 @@
 
 $post_url = get_site_url() . '/' . $post->post_name . '/';
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <header class="entry-header">
             <a href="<?php echo $post_url; ?>">

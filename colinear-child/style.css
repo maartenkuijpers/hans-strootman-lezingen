@@ -9,3 +9,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Template: colinear
 Text Domain: colinear
 */
+
+.category-lezingen h1, .category-organisten h1 {
+    font-size: 1em;
+}
+.category-lezingen article, .category-organisten article {
+    margin-bottom: 0;
+}
+
+.category-lezingen article .entry-content, .category-organisten article .entry-content {
+    margin-top: 0;
+    font-style: italic;  
+}
